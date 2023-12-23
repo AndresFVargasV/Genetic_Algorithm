@@ -1,33 +1,32 @@
-# Algoritmo genético para el problema del viajante (TSP)
+# Genetic Algorithm for the Traveling Salesman Problem (TSP)
 
-Este proyecto implementa un algoritmo genético para intentar encontrar una buena solución aproximada al problema del viajante (TSP).
+This project implements a genetic algorithm to attempt to find a good approximate solution to the Traveling Salesman Problem (TSP).
 
-## Descripción del problema TSP
+## Description of the TSP Problem
 
-El problema del viajante (Traveling Salesman Problem, TSP) consiste en encontrar la ruta más corta posible que visite una serie de ciudades y regrese a la ciudad origen, visitando una sola vez cada ciudad. Es un problema clásico de optimización combinatoria.
+The Traveling Salesman Problem (TSP) involves finding the shortest possible route that visits a series of cities and returns to the original city, visiting each city only once. It is a classic problem in combinatorial optimization.
 
-## Algoritmo genético 
+## Genetic Algorithm
 
-Los algoritmos genéticos son técnicas de optimización inspiradas en conceptos como la selección natural y la genética. Parten de una población inicial de soluciones candidatas generadas aleatoriamente. Cada solución tiene asociada una "aptitud" que indica qué tan buena es. Luego, se realizan operaciones para combinar y mutar esas soluciones candidatas, generando nuevas poblaciones de soluciones que conservan las características de mayor aptitud.
+Genetic algorithms are optimization techniques inspired by concepts such as natural selection and genetics. They start with an initial population of randomly generated candidate solutions. Each solution has an associated "fitness" indicating how good it is. Operations are then performed to combine and mutate these candidate solutions, generating new populations of solutions that retain the characteristics of higher fitness.
 
-Este proceso se repite durante varias generaciones hasta encontrar soluciones con aptitud suficientemente buena o hasta que no se observa más mejora.
+This process is repeated over several generations until solutions with sufficiently good fitness are found or until no further improvement is observed.
 
-## Detalles de implementación
+## Implementation Details
 
-La implementación consta de:
+The implementation consists of:
 
-- Un generador aleatorio de ciudades con coordenadas x,y
-- Una función de distancia euclidiana entre ciudades
-- Generación aleatoria de caminos iniciales
-- Cálculo de la aptitud de cada camino como la suma de distancias del recorrido
-- Algoritmo genético con:
-  - Selección de los caminos con mejor aptitud
-  - Cruce de caminos para generar nuevos descendientes
-  - Mutación aleatoria de algunos caminos
-  - Reemplazo de la población por los nuevos descendientes
-- Visualización del mejor camino encontrado
+- A random city generator with x, y coordinates
+- A Euclidean distance function between cities
+- Random generation of initial paths
+- Calculation of the fitness of each path as the sum of distances traveled
+- Genetic algorithm with:
+  - Selection of paths with better fitness
+  - Crossover of paths to generate new offspring
+  - Random mutation of some paths
+  - Replacement of the population with the new offspring
+- Visualization of the best-found path
 
-Los parámetros principales como el tamaño de la población, número de generaciones, probabilidad de mutación, etc. se pueden modificar fácilmente.
+Key parameters such as population size, number of generations, mutation probability, etc., can be easily modified.
 
-Este proyecto muestra una aplicación directa de los algoritmos genéticos para intentar resolver aproximadamente un problema complejo de optimización combinatoria.
-
+This project demonstrates a direct application of genetic algorithms to approximately solve a complex combinatorial optimization problem.
